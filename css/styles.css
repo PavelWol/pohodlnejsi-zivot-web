@@ -2976,6 +2976,15 @@ input[type=button].btn-block {
   overflow: hidden;
   transition: height 0.35s ease;
 }
+
+#text button:after  {
+  content: 'více';
+}
+
+#text button:not(.collapsed):after {
+  content: 'méně';
+}
+
 @media (prefers-reduced-motion: reduce) {
   .collapsing {
     transition: none;
